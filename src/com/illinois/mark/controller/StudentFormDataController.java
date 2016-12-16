@@ -21,6 +21,7 @@ public class StudentFormDataController {
 
     @RequestMapping("/AddStudent")
     public ModelAndView addStudent() {
+    	//this is mark
         String message = "Add Student";
         ModelAndView modelAndView = new ModelAndView("AddStudentForm", "message", message);
         modelAndView.addObject(STUDENT_OBJECT, new Student());
